@@ -1,2 +1,5 @@
-store Username and Password in the enviroment through SETX command
-useage: setx DYNATRACE_USERNAME "your-username" setx DYNATRACE_PASSWORD "your-password"
+Replace variable values with your own
+
+Requires Chromedriver and python
+
+Useage: run python 
