@@ -1,3 +1,10 @@
+'''
+
+Script brought to you by Tasukete
+
+'''
+
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
@@ -6,10 +13,10 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 import os
 
-tenant = "https://xph62488.live.dynatrace.com/"
-username = 'cs-edison.tay@ntu.edu.sg'
-password = 'Ihateniggers123!'
-backuri = "#dashboard;id=86d7ee1d-50eb-4945-8d7c-f5b238830c29;gf=all;gtf=-2h"
+tenant = "https://12345.live.dynatrace.com/" #replace with your fromt part of the url
+username = 'username' #replace with your username
+password = 'password' #replace with your password
+backuri = "#dashboard;id=12345" #replace with the dashboard ID section of your url
 wait_time = 30
 
 if __name__ == '__main__':    
@@ -18,7 +25,7 @@ if __name__ == '__main__':
     chrome_options.add_argument("--disable-infobars")
 
     # Set the path to your chromedriver executable
-    chromedriver_path = "C:/Users/CS-EDISON.TAY/Desktop/scripts/chromedriver/chromedriver.exe"  # Update with your actual chromedriver path
+    chromedriver_path = "/chromedriver.exe"  # Update with your actual chromedriver path
     service = Service(chromedriver_path)
 
     # Initialize the WebDriver with the Service object and options
