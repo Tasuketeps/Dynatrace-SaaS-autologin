@@ -12,10 +12,10 @@ import pygetwindow as gw
 tenant = "https://xph62488.live.dynatrace.com/"
 username = 'lkc-it-automation@ntu.edu.sg'
 password = 'TVmonitor123'
-backuri = "#dashboard;id=86d7ee1d-50eb-4945-8d7c-f5b238830c29;gf=all;gtf=-2h"
+backuri = "#dashboard;gtf=l_2_HOURS;gf=all;id=e5e5f314-c733-4b14-8dd2-d087028c9291"
 wait_time = 30
 
-chrome_title_1 = 'Window 1'
+chrome_title_1 = 'Window 2'
 
 def run_script(chrome_title):
     chrome_options = Options()
@@ -40,7 +40,7 @@ def run_script(chrome_title):
         monitor_3 = (-1920, 0)
         monitor_4 = (-1899, -1080)
 
-        chrome_window.moveTo(*monitor_4)
+        chrome_window.moveTo(*monitor_2)
 
     # Open the login page
     driver.get(tenant)
