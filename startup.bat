@@ -1,5 +1,4 @@
 @echo off
-cd C:\Users\OEM\Desktop\autologin folder
+cd C:/path/to/script/folder
 python autologin.py
-python autologin2.py
 exit
