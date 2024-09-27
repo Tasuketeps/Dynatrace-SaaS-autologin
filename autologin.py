@@ -10,13 +10,13 @@ import time
 import pygetwindow as gw
 
 
-tenant = "https://xph62488.live.dynatrace.com/"
-username = 'lkc-it-automation@ntu.edu.sg'
-password = 'TVmonitor123'
-backuri = "#dashboard;id=86d7ee1d-50eb-4945-8d7c-f5b238830c29;gf=all;gtf=-2h"
+tenant = "https://yourlinkhere.com/"
+username = 'your-username-here'
+password = 'your-password-here'
+backuri = "#dashboard;id=add-your-dashboard-section-here"
 wait_time = 30
 
-chrome_title_1 = 'Window 1'
+chrome_title_1 = 'custom-window-name-here'
 
 #initialise chrome driver
 chrome_options = Options()
@@ -25,7 +25,7 @@ chrome_options.add_argument("--kiosk")
 chrome_options.add_argument("--no-sandbox")   # Run without sandbox
 
 # Set the path to your chromedriver executable
-chromedriver_path = "C:/Users/CS-EDISON.TAY/Desktop/scripts/chromedriver/chromedriver.exe"  # Update with your actual chromedriver path
+chromedriver_path = "/path/to/chromedriver.exe"  # Update with your actual chromedriver path
 service = Service(chromedriver_path)
 
 # Initialize the WebDriver with the Service object and options
